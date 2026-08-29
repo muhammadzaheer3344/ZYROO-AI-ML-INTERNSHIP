@@ -39,7 +39,7 @@ The repository is organized to track my progress and deliverables effectively:
 
 ```plaintext
 📦 ai-ml-internship-zyrointerns
-├── 📂 week-1/                # Major projects and models developed├
+├── 📂 week-1/                # Envoirment Setup├
 ├── 📂 week-2/
 ├── 📂 week-3/
 ├── 📂 week-4/
