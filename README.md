@@ -39,12 +39,11 @@ The repository is organized to track my progress and deliverables effectively:
 
 ```plaintext
 📦 ai-ml-internship-zyrointerns
-├── 📂 projects/                # Major projects and models developed
-│   ├── project-1/              # Specific project folders
-│   └── project-2/
-├── 📂 assignments/             # Weekly tasks and assessment submissions
-├── 📂 datasets/                # Sample/processed datasets (or links to sources)
-├── 📂 notebooks/               # Jupyter/Colab exploratory analysis
-├── 📂 research-notes/          # Daily logs, paper summaries, and learnings
-├── 📂 resources/               # Helpful guides, cheatsheets, and references
+├── 📂 week-1/                # Major projects and models developed├
+├── 📂 week-2/
+├── 📂 week-3/
+├── 📂 week-4/
+.
+.
+.
 └── 📄 README.md                # This file
