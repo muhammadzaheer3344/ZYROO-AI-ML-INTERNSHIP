@@ -1,4 +1,4 @@
-# AI Document Intelligence & Workflow Platform
+﻿# AI Document Intelligence & Workflow Platform
 
 Document intelligence MVP developed for the ZYROO Internship Week 1 Task 01. The application lets users upload a document, extract its text, classify it, and identify useful fields automatically.
 

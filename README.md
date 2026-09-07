@@ -1,4 +1,4 @@
-# 🤖 AI/ML Internship @ ZyroInterns
+﻿# ðŸ¤– AI/ML Internship @ ZyroInterns
 
 > **Official Repository for Internship Work & Projects**
 
@@ -9,14 +9,14 @@
 
 ---
 
-## 📌 About This Repository
+## ðŸ“Œ About This Repository
 
 This repository serves as a centralized portfolio and documentation hub for my **AI/ML Internship** at **ZyroInterns**. 
 Here, I will store all my project work, assignments, research notes, and code implementations developed throughout this internship journey.
 
 ---
 
-## 📄 Internship Offer Details
+## ðŸ“„ Internship Offer Details
 
 | Attribute | Information |
 | :--- | :--- |
@@ -27,7 +27,7 @@ Here, I will store all my project work, assignments, research notes, and code im
 | **Expiration Date** | August 26, 2026 |
 | **Verification** | [Verify Credential](https://zyroo.org/verify?type=offer&id=ZYRO-OF-2026-843733) |
 
-> 🔗 **Official Links**
+> ðŸ”— **Official Links**
 > - Student Dashboard: [https://zyroo.org/student/offer-letters](https://zyroo.org/student/offer-letters)
 > - Career Hub: [https://zyroo.org/careers](https://zyroo.org/careers)
 
@@ -39,26 +39,27 @@ Here, I will store all my project work, assignments, research notes, and code im
 
 The Week 1 Task 1 application is available here:
 
-- [Open project folder](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/)
-- [Project README](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/README.md)
-- [Streamlit application](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/app.py)
+- [Open project folder](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20and%20Workflow%20Platform/)
+- [Project README](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20and%20Workflow%20Platform/README.md)
+- [Streamlit application](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20and%20Workflow%20Platform/app.py)
 
 The project includes the Streamlit web interface and an optional FastAPI server for document upload, OCR, text extraction, classification, and information extraction.
 
 ---
 
-## 🗂 Repository Structure
+## ðŸ—‚ Repository Structure
 
 The repository is organized to track my progress and deliverables effectively:
 
 ```plaintext
-📦 ai-ml-internship-zyrointerns
-├── 📂 week-1/                # Environment setup
-├── 📂 WEEK 1 TASK 1 AI Document Intelligence & Workflow Platform/
-├── 📂 week-2/
-├── 📂 week-3/
-├── 📂 week-4/
+ðŸ“¦ ai-ml-internship-zyrointerns
+â”œâ”€â”€ ðŸ“‚ week-1/                # Environment setup
+â”œâ”€â”€ ðŸ“‚ WEEK 1 TASK 1 AI Document Intelligence & Workflow Platform/
+â”œâ”€â”€ ðŸ“‚ week-2/
+â”œâ”€â”€ ðŸ“‚ week-3/
+â”œâ”€â”€ ðŸ“‚ week-4/
 .
 .
 .
-└── 📄 README.md                # This file
+â””â”€â”€ ðŸ“„ README.md                # This file
+
