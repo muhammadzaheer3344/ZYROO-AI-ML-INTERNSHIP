@@ -45,6 +45,11 @@ The Week 1 Task 1 application is available here:
 
 The project includes the Streamlit web interface and an optional FastAPI server for document upload, OCR, text extraction, classification, and information extraction.
 
+### Live Links
+
+- [GitHub repository](https://github.com/muhammadzaheer3344/ZYROO-AI-ML-INTERNSHIP)
+- [Deployed Streamlit app](https://zyroo-ai-ml-internship-gbsrtuhnqx9yjikwjzcwza.streamlit.app)
+
 ---
 
 ## Streamlit Community Cloud Deployment
@@ -55,7 +60,6 @@ The repository keeps the deployment files at the root so Streamlit Community Clo
 - `packages.txt` installs Tesseract OCR system packages.
 - `.streamlit/config.toml` contains the Streamlit theme configuration.
 - `streamlit_app.py` is the root deployment entry point and loads the existing app.
-- `Platform/requirements.txt` is retained as a compatibility copy for the previous Cloud path.
 
 In Streamlit Community Cloud, create or edit the app with:
 
@@ -65,7 +69,7 @@ Branch: main
 Main file path: streamlit_app.py
 ```
 
-Cloud should use the root-level `requirements.txt`; the application-folder and `Platform/requirements.txt` files are compatibility copies.
+Cloud uses the root-level `requirements.txt` and `packages.txt`.
 
 ---
 
@@ -78,8 +82,6 @@ The repository is organized to track my progress and deliverables effectively:
 â”œâ”€â”€ ðŸ“„ requirements.txt       # Root Cloud dependencies
 â”œâ”€â”€ ðŸ“„ packages.txt           # Tesseract system dependencies
 â”œâ”€â”€ ðŸ“„ streamlit_app.py       # Root Cloud entry point
-â”œâ”€â”€ ðŸ“‚ Platform/
-â”‚   â””â”€â”€ requirements.txt       # Compatibility copy
 â”œâ”€â”€ ðŸ“‚ .streamlit/
 â”‚   â””â”€â”€ config.toml
 â”œâ”€â”€ ðŸ“‚ week-1/                # Environment setup
