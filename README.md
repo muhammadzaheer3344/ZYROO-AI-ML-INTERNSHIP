@@ -54,16 +54,18 @@ The repository keeps the deployment files at the root so Streamlit Community Clo
 - `requirements.txt` contains the Python dependencies for the application and API.
 - `packages.txt` installs Tesseract OCR system packages.
 - `.streamlit/config.toml` contains the Streamlit theme configuration.
+- `streamlit_app.py` is the root deployment entry point and loads the existing app.
+- `Platform/requirements.txt` is retained as a compatibility copy for the previous Cloud path.
 
 In Streamlit Community Cloud, create or edit the app with:
 
 ```text
 Repository: muhammadzaheer3344/ZYROO-AI-ML-INTERNSHIP
 Branch: main
-Main file path: WEEK 1 TASK 1 AI Document Intelligence and Workflow Platform/app.py
+Main file path: streamlit_app.py
 ```
 
-The `requirements.txt` inside the application folder is retained as a local backup. Cloud should use the root-level `requirements.txt`.
+Cloud should use the root-level `requirements.txt`; the application-folder and `Platform/requirements.txt` files are compatibility copies.
 
 ---
 
@@ -75,6 +77,9 @@ The repository is organized to track my progress and deliverables effectively:
 ðŸ“¦ ai-ml-internship-zyrointerns
 â”œâ”€â”€ ðŸ“„ requirements.txt       # Root Cloud dependencies
 â”œâ”€â”€ ðŸ“„ packages.txt           # Tesseract system dependencies
+â”œâ”€â”€ ðŸ“„ streamlit_app.py       # Root Cloud entry point
+â”œâ”€â”€ ðŸ“‚ Platform/
+â”‚   â””â”€â”€ requirements.txt       # Compatibility copy
 â”œâ”€â”€ ðŸ“‚ .streamlit/
 â”‚   â””â”€â”€ config.toml
 â”œâ”€â”€ ðŸ“‚ week-1/                # Environment setup
