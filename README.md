@@ -48,7 +48,7 @@ The project includes the Streamlit web interface and an optional FastAPI server 
 ### Live Links
 
 - [GitHub repository](https://github.com/muhammadzaheer3344/ZYROO-AI-ML-INTERNSHIP)
-- [Deployed Streamlit app](https://zyroo-ai-ml-internship-gbsrtuhnqx9yjikwjzcwza.streamlit.app)
+- **Deployed Streamlit app:** https://zyroo-ai-ml-internship-gbsrtuhnqx9yjikwjzcwza.streamlit.app
 
 ---
 
