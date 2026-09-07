@@ -55,8 +55,6 @@ Install the dependencies:
 python -m pip install -r requirements.txt
 ```
 
-`requirments.txt` is also kept as a legacy compatibility file for the original project setup.
-
 ## Run the Application
 
 ```powershell
@@ -161,7 +159,6 @@ Press `Ctrl+C` to stop both processes.
 |-- app.py
 |-- fastapi_app.py
 |-- requirements.txt
-|-- requirments.txt
 |-- run_both.py
 |-- README.md
 |-- venv/
