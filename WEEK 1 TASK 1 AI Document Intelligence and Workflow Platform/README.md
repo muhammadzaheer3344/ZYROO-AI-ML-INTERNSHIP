@@ -67,6 +67,11 @@ Then open the local URL shown in the terminal, usually:
 http://localhost:8501
 ```
 
+## Live Links
+
+- GitHub repository: https://github.com/muhammadzaheer3344/ZYROO-AI-ML-INTERNSHIP
+- Deployed Streamlit app: https://zyroo-ai-ml-internship-gbsrtuhnqx9yjikwjzcwza.streamlit.app
+
 ## FastAPI Server (Optional)
 
 The FastAPI server provides programmatic access to the same document extraction and classification logic. It runs independently from Streamlit on port `8000`.
