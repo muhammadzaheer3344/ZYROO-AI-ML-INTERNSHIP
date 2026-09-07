@@ -35,7 +35,7 @@ Here, I will store all my project work, assignments, research notes, and code im
 
 ## Week 1 Projects
 
-### AI Document Intelligence & Workflow Platform
+### AI Document Intelligence and Workflow Platform
 
 The Week 1 Task 1 application is available here:
 
@@ -54,7 +54,7 @@ The repository is organized to track my progress and deliverables effectively:
 ```plaintext
 ðŸ“¦ ai-ml-internship-zyrointerns
 â”œâ”€â”€ ðŸ“‚ week-1/                # Environment setup
-â”œâ”€â”€ ðŸ“‚ WEEK 1 TASK 1 AI Document Intelligence & Workflow Platform/
+â”œâ”€â”€ ðŸ“‚ WEEK 1 TASK 1 AI Document Intelligence and Workflow Platform/
 â”œâ”€â”€ ðŸ“‚ week-2/
 â”œâ”€â”€ ðŸ“‚ week-3/
 â”œâ”€â”€ ðŸ“‚ week-4/
