@@ -39,9 +39,9 @@ Here, I will store all my project work, assignments, research notes, and code im
 
 The Week 1 Task 1 application is available here:
 
-- [Open project folder](week-1/WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/)
-- [Project README](week-1/WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/README.md)
-- [Streamlit application](week-1/WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/app.py)
+- [Open project folder](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/)
+- [Project README](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/README.md)
+- [Streamlit application](WEEK%201%20TASK%201%20AI%20Document%20Intelligence%20%26%20Workflow%20Platform/app.py)
 
 The project includes the Streamlit web interface and an optional FastAPI server for document upload, OCR, text extraction, classification, and information extraction.
 
@@ -53,8 +53,8 @@ The repository is organized to track my progress and deliverables effectively:
 
 ```plaintext
 📦 ai-ml-internship-zyrointerns
-├── 📂 week-1/                # Environment setup and Week 1 projects
-│   └── 📂 WEEK 1 TASK 1 AI Document Intelligence & Workflow Platform/
+├── 📂 week-1/                # Environment setup
+├── 📂 WEEK 1 TASK 1 AI Document Intelligence & Workflow Platform/
 ├── 📂 week-2/
 ├── 📂 week-3/
 ├── 📂 week-4/
