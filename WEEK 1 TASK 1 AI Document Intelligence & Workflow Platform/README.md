@@ -71,6 +71,12 @@ http://localhost:8501
 
 The FastAPI server provides programmatic access to the same document extraction and classification logic. It runs independently from Streamlit on port `8000`.
 
+Install the optional API dependencies locally:
+
+```powershell
+python -m pip install -r requirements-api.txt
+```
+
 Start the API server:
 
 ```powershell
@@ -159,6 +165,7 @@ Press `Ctrl+C` to stop both processes.
 |-- app.py
 |-- fastapi_app.py
 |-- requirements.txt
+|-- requirements-api.txt
 |-- run_both.py
 |-- README.md
 |-- venv/
