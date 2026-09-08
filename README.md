@@ -56,7 +56,7 @@ The project includes the Streamlit web interface and an optional FastAPI server 
 
 The repository keeps the deployment files at the root so Streamlit Community Cloud can find them reliably:
 
-- `requirements.txt` contains the Python dependencies for the application and API.
+- `requirements.txt` contains the Python dependencies required by the Streamlit deployment.
 - `packages.txt` installs Tesseract OCR system packages.
 - `.streamlit/config.toml` contains the Streamlit theme configuration.
 - `streamlit_app.py` is the root deployment entry point and loads the existing app.
@@ -69,7 +69,7 @@ Branch: main
 Main file path: streamlit_app.py
 ```
 
-Cloud uses the root-level `requirements.txt` and `packages.txt`.
+Cloud uses the root-level `requirements.txt` and `packages.txt`. FastAPI is an optional local service and is not installed by the Streamlit Cloud build.
 
 ---
 
