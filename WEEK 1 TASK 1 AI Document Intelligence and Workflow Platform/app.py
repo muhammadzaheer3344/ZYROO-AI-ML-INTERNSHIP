@@ -5,15 +5,21 @@ import os
 import shutil
 import tempfile
 from PIL import Image
-import pytesseract
 import io
 import base64
 from datetime import datetime
 
+try:
+    import pytesseract
+    TESSERACT_AVAILABLE = True
+except ImportError:
+    pytesseract = None
+    TESSERACT_AVAILABLE = False
+
 # Use the standard Windows installation when Tesseract is not on PATH.
 if os.name == "nt" and not shutil.which("tesseract"):
     windows_tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    if os.path.isfile(windows_tesseract_path):
+    if TESSERACT_AVAILABLE and os.path.isfile(windows_tesseract_path):
         pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
 
 # Configure page
@@ -62,6 +68,9 @@ def extract_text_from_pdf(uploaded_file):
 def extract_text_from_image(uploaded_file):
     """Extract text from image using Tesseract OCR."""
     try:
+        if not TESSERACT_AVAILABLE:
+            st.error("OCR is unavailable because pytesseract is not installed.")
+            return None
         image = Image.open(io.BytesIO(uploaded_file.getvalue()))
         text = pytesseract.image_to_string(image)
         return text if text.strip() else None
