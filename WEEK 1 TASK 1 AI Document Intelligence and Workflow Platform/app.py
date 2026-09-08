@@ -11,7 +11,7 @@ from datetime import datetime
 
 try:
     import pytesseract
-    TESSERACT_AVAILABLE = True
+    TESSERACT_AVAILABLE = shutil.which("tesseract") is not None
 except ImportError:
     pytesseract = None
     TESSERACT_AVAILABLE = False
@@ -19,8 +19,9 @@ except ImportError:
 # Use the standard Windows installation when Tesseract is not on PATH.
 if os.name == "nt" and not shutil.which("tesseract"):
     windows_tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    if TESSERACT_AVAILABLE and os.path.isfile(windows_tesseract_path):
+    if TESSERACT_AVAILABLE or os.path.isfile(windows_tesseract_path):
         pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
+        TESSERACT_AVAILABLE = True
 
 # Configure page
 st.set_page_config(
