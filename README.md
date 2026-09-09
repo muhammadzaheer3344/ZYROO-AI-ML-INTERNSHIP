@@ -84,10 +84,9 @@ The repository is organized to track my progress and deliverables effectively:
 â”œâ”€â”€ ðŸ“„ streamlit_app.py       # Root Cloud entry point
 â”œâ”€â”€ ðŸ“‚ .streamlit/
 â”‚   â””â”€â”€ config.toml
+â”œâ”€â”€ ðŸ“„ packages.txt            # Tesseract OCR system dependencies
 â”œâ”€â”€ ðŸ“‚ week-1/                # Environment setup
 â”œâ”€â”€ ðŸ“‚ WEEK 1 TASK 1 AI Document Intelligence and Workflow Platform/
-â”œâ”€â”€ ðŸ“‚ week-2/
-â”œâ”€â”€ ðŸ“‚ week-3/
 â”œâ”€â”€ ðŸ“‚ week-4/
 .
 .
