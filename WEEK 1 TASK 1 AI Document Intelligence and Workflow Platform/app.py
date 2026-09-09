@@ -16,12 +16,17 @@ except ImportError:
     pytesseract = None
     TESSERACT_AVAILABLE = False
 
-# Use the standard Windows installation when Tesseract is not on PATH.
-if os.name == "nt" and not shutil.which("tesseract"):
-    windows_tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    if TESSERACT_AVAILABLE or os.path.isfile(windows_tesseract_path):
-        pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
-        TESSERACT_AVAILABLE = True
+# Use common Windows installation paths when Tesseract is not on PATH.
+if pytesseract is not None and os.name == "nt" and not TESSERACT_AVAILABLE:
+    windows_tesseract_paths = [
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+    ]
+    for windows_tesseract_path in windows_tesseract_paths:
+        if os.path.isfile(windows_tesseract_path):
+            pytesseract.pytesseract.tesseract_cmd = windows_tesseract_path
+            TESSERACT_AVAILABLE = True
+            break
 
 # Configure page
 st.set_page_config(
@@ -69,8 +74,11 @@ def extract_text_from_pdf(uploaded_file):
 def extract_text_from_image(uploaded_file):
     """Extract text from image using Tesseract OCR."""
     try:
+        if pytesseract is None:
+            st.error("OCR is unavailable because the Python package pytesseract is not installed.")
+            return None
         if not TESSERACT_AVAILABLE:
-            st.error("OCR is unavailable because pytesseract is not installed.")
+            st.error("OCR is unavailable because the Tesseract OCR engine is not installed.")
             return None
         image = Image.open(io.BytesIO(uploaded_file.getvalue()))
         text = pytesseract.image_to_string(image)
