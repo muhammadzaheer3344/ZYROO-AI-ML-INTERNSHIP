@@ -57,6 +57,7 @@ The project includes the Streamlit web interface and an optional FastAPI server 
 The repository keeps the deployment files at the root so Streamlit Community Cloud can find them reliably:
 
 - `requirements.txt` contains the Python dependencies required by the Streamlit deployment.
+- `packages.txt` installs the Linux Tesseract OCR system packages.
 - `.streamlit/config.toml` contains the Streamlit theme configuration.
 - `streamlit_app.py` is the root deployment entry point and loads the existing app.
 
@@ -68,7 +69,7 @@ Branch: main
 Main file path: streamlit_app.py
 ```
 
-Cloud uses the root-level `requirements.txt`. Tesseract system packages are intentionally omitted because the current Streamlit Cloud Debian apt mirror has an expired `bullseye-security` release. FastAPI is an optional local service and is not installed by the Streamlit Cloud build.
+Cloud uses the root-level `requirements.txt` and `packages.txt`. FastAPI is an optional local service and is not installed by the Streamlit Cloud build.
 
 ---
 
@@ -79,6 +80,7 @@ The repository is organized to track my progress and deliverables effectively:
 ```plaintext
 ðŸ“¦ ai-ml-internship-zyrointerns
 â”œâ”€â”€ ðŸ“„ requirements.txt       # Root Cloud dependencies
+â”œâ”€â”€ ðŸ“„ packages.txt            # Tesseract OCR system dependencies
 â”œâ”€â”€ ðŸ“„ streamlit_app.py       # Root Cloud entry point
 â”œâ”€â”€ ðŸ“‚ .streamlit/
 â”‚   â””â”€â”€ config.toml
