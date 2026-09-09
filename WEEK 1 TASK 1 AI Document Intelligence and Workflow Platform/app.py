@@ -12,9 +12,10 @@ from datetime import datetime
 try:
     import pytesseract
     TESSERACT_AVAILABLE = shutil.which("tesseract") is not None
-except ImportError:
+except ImportError as error:
     pytesseract = None
     TESSERACT_AVAILABLE = False
+    TESSERACT_IMPORT_ERROR = str(error)
 
 # Use common Windows installation paths when Tesseract is not on PATH.
 if pytesseract is not None and os.name == "nt" and not TESSERACT_AVAILABLE:
@@ -75,7 +76,7 @@ def extract_text_from_image(uploaded_file):
     """Extract text from image using Tesseract OCR."""
     try:
         if pytesseract is None:
-            st.error("OCR is unavailable because the Python package pytesseract is not installed.")
+            st.error(f"OCR is unavailable because the Python package pytesseract is not installed: {TESSERACT_IMPORT_ERROR}")
             return None
         if not TESSERACT_AVAILABLE:
             st.error("OCR is unavailable because the Tesseract OCR engine is not installed.")
